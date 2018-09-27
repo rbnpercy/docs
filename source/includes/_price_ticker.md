@@ -4,6 +4,8 @@ The “Ticker” API returns all relevant data (name, symbol, code, decimals, pr
 
 “Volume” and “total supply” values are indicated in the smallest unit of the token (example: Wei for ETH) which means you will need to format it correctly based on the token’s decimal digit settings.
 
+[See the Price Ticker API in use in this tutorial.](#)
+
 ## Get Price Ticker
 
 ```shell
@@ -32,7 +34,21 @@ let ticker = api.ticker.get();
 }
 ```
 
-This endpoint retrieves the Bancor Price Ticker.
+> If incorrect Token Currency Codes are entered, you will receive the following error:
+
+```json
+{"errorCode":"invalidCurrencyId"}
+```
+
+> If your query params are incorrect, you will receive the following error:
+
+```json
+{"errorCode":"invalidArgs"}
+```
+
+
+
+This endpoint retrieves the Bancor Price Ticker details for the specified token pair.  [Available token pairs are listed here.](#get-available-pairs)
 
 ### HTTP Request
 
