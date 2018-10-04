@@ -1,13 +1,13 @@
 # Available Pairs API
 
-The “Pairs” API returns token pairs in the Bancor network:
+The Pairs API returns token pairs in the Bancor network.
 
 Since Bancor allow converting any token to any token, the API will only focus on major pairs that are known and familiar outside the Bancor network.
 
 The token pairs are structured in the following way:
 
- 1. BNT/ETH
- 2. Any other token on the Bancor network/BNT
+ 1. BNT <> ETH
+ 2. Any other token on the Bancor network <> BNT
 
 ## Get Available Pairs
 
@@ -30,7 +30,7 @@ let pairs = api.pairs.get();
 }
 ```
 
-This endpoint retrieves the available Bancor Token Pairs.
+This endpoint retrieves the available Token Pairs on the Bancor network.
 
 ### HTTP Request
 
