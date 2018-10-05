@@ -2,7 +2,7 @@
 
 The Pairs API returns token pairs in the Bancor network.
 
-Since Bancor allow converting any token to any token, the API will only focus on major pairs that are known and familiar outside the Bancor network.
+Since Bancor allows the conversion of any token to any other token, the API will only focus on major pairs that are known and familiar outside the Bancor network.
 
 The token pairs are structured in the following way:
 
