@@ -55,7 +55,7 @@ ownerAddress | The address of the wallet executing the transaction.
 
 ### Hashed Values
 
-Bancor uses a prioritization mechanism to enable transactions to be executed in the correct and valid order. Changing any of these values will cause the transaction to fail:
+Bancor uses a prioritization mechanism to ensure transactions are executed in the valid and correct order. Changing any of *these* values will cause the transaction to fail:
 
 1. **Block number** - we initiate a transaction life of X blocks. Meaning, from the moment you create the transaction you have X amount of blocks to execute it. Executing it after the transaction lifetime will cause the transaction to fail.
 2. **Gas price** - the gas price received is part of the transaction's hard coded values. Changing the gas price will cause the transaction to fail.
